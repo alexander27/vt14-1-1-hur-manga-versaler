@@ -15,9 +15,11 @@
             <asp:TextBox ID="TextArea" runat="server" ViewStateMode="Disabled" TextMode="MultiLine"></asp:TextBox>
           
             <asp:Button ID="Button" runat="server" Text="Bestäm antalet versaler" OnClick="Button_Click" Visible="True" ViewStateMode="Inherit" />
-            
-                <asp:Label ID="Label" runat="server" Text="" ViewStateMode="Disabled"></asp:Label>
+          
+             <asp:Label ID="Label" runat="server" Text="" ViewStateMode="Disabled"></asp:Label>
+                 
            
+                
         </div>
     </form>
 </body>

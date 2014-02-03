@@ -19,11 +19,12 @@ namespace Versaler
             if (Button.Text == "Bestäm antalet versaler")
             {
                 TextArea.Enabled = false;
+                
                 var input = TextArea.Text;
                 int C = Model.TextAnalyzer.GetNumberOfC(input);
                 Label.Text += Model.TextAnalyzer.GetNumberOfC(input);
                 Button.Text = "Rensa";
-
+                Label.Text = "Texten innehåller"  +" "+ C +" "+ "versaler";
             }
             else {
 
