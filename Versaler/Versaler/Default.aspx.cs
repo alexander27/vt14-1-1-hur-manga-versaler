@@ -11,31 +11,39 @@ namespace Versaler
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+              
         }
 
         protected void Button_Click(object sender, EventArgs e)
         {
             if (Button.Text == "Bestäm antalet versaler")
             {
+                Button.Visible=false;
                 TextArea.Enabled = false;
-                
                 var input = TextArea.Text;
                 int C = Model.TextAnalyzer.GetNumberOfC(input);
                 Label.Text += Model.TextAnalyzer.GetNumberOfC(input);
-                Button.Text = "Rensa";
-                Label.Text = "Texten innehåller"  +" "+ C +" "+ "versaler";
+                Label.Text = "Texten innehåller" + " " + C + " " + "versaler";
+                Button1.Visible=true;
+                                
             }
-            else {
+
+
+
+        }
+
+
+
+
+
+        protected void Button_Click1(object sender, EventArgs e)
+        {
+            if (Button1.Text == "Rensa")
+            {
 
                 TextArea.Enabled = true;
                 Button.Text = "Bestäm antalet versaler";
-
-            
             }
-            
-
-
         }
     }
 }

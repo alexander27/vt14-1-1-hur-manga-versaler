@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Versaler.Default"   %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Versaler.Default" ViewStateMode="Disabled"  %>
 
 <!DOCTYPE html>
 
@@ -12,11 +12,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:TextBox ID="TextArea" runat="server" ViewStateMode="Disabled" TextMode="MultiLine"></asp:TextBox>
+            <asp:TextBox ID="TextArea" runat="server" ViewStateMode="Inherit" TextMode="MultiLine"></asp:TextBox>
           
             <asp:Button ID="Button" runat="server" Text="Bestäm antalet versaler" OnClick="Button_Click" Visible="True" ViewStateMode="Inherit" />
-          
-             <asp:Label ID="Label" runat="server" Text="" ViewStateMode="Disabled"></asp:Label>
+            <asp:Button ID="Button1" runat="server" Text="Rensa" OnClick="Button_Click1" Visible="false"/>
+             <asp:Label ID="Label" runat="server" Text="" ViewStateMode="inherit" EnableViewState="True" Visible="True"></asp:Label>
                  
            
                 
